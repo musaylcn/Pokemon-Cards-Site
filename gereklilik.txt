@@ -1,0 +1,99 @@
+React + TypeScript ile en az 4 alt sayfadan oluşan, modern frontend teknolojileri
+kullanılan bir web uygulaması geliştirme. Sıfırdan bir proje yapabilirsiniz ya da eski bir
+sayfada iyileştirme yapabilirsiniz. 1. Projeden farklı olmalı.
+Aşağıdaki teknolojiler zorunludur:
+ react-router-dom ile sayfa geçişleri
+ Form yönetimi için Formik veya React Hook Form
+ Global state yönetimi için Context API, Redux veya Zustand
+ Responsive tasarım
+ TypeScript ile tip güvenliği
+
+✅ Değerlendirme Kriterleri ve Puanlama Tablosu
+Kategori Açıklama Puan
+1. Proje Yapısı ve
+Temizlik
+
+Dosya/folder yapısı düzenli mi? Kod okunabilir mi? Gereksiz
+tekrarlar var mı? 10
+
+2. Sayfa Sayısı ve
+Routing
+
+En az 4 sayfa var mı? react-router-dom ile geçişler düzgün
+tanımlanmış mı? 10
+
+3. Component
+Kullanımı
+
+Tekrar eden yapılar componentleştirilmiş mi? Component
+hiyerarşisi mantıklı mı? 10
+
+4. TypeScript Tip
+Güvenliği
+
+Doğru tipler tanımlanmış mı? Interface/type kullanılmış mı?
+any kullanımı minimize edilmiş mi? 10
+
+5. Form Yönetimi
+(Formik / RHF)
+
+Formik veya React Hook Form ile en az bir form yapılmış
+mı? Doğru çalışıyor mu? 10
+
+6. Global State
+Yönetimi
+
+Context API, Redux veya Zustand’den biriyle global state
+kullanımı yapılmış mı? 10
+
+7. API veya Mock Veri
+Kullanımı
+
+Dış veri kaynağı kullanımı var mı? API çağrıları (fetch veya
+axios) düzgün mü? 10
+
+8. Durum Yönetimi
+(Hooks)
+
+useState, useEffect, useContext, useReducer gibi
+hook&#39;lar anlamlı şekilde kullanılmış mı? 10
+
+9. Tasarım, Stil ve
+Responsive Yapı
+
+CSS/Tailwind/SCSS kullanımı düzgün mü? Mobil uyumlu
+tasarım var mı? Görsel bütünlük sağlanmış mı? 10
+
+10. Kod Versiyon
+Kontrolü ve Sunum
+
+Git kullanımı var mı? GitHub deposu düzenli mi? Commit
+mesajları anlamlı mı? (Sunum veya video varsa +5 bonus) 10
+Toplam
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

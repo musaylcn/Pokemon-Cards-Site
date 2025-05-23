@@ -1,0 +1,43 @@
+
+
+header {
+  background-color: black;
+  padding: 20px 40px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  margin-bottom: 3rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+nav a {
+  color: #61dafb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: white;
+  border-bottom: 2px solid #61dafb;
+}
+
+/* Responsive: Mobil cihazlar için menüyü dikey hale getir */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
