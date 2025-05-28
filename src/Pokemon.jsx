@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { PokemonCards } from "./PokemonCards"; // PokemonCards bileşenini import ediyoruz
+import { PokemonCards } from "./PokemonCards"; 
 
 export const Pokemon = () => {
   const [pokemon, setPokemon] = useState([]);

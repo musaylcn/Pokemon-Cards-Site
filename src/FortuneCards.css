@@ -1,0 +1,112 @@
+.fortune-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.fortune-container h1 {
+  color: #ffcb05;
+  text-shadow: 2px 2px 4px #2a75bb;
+  margin-bottom: 1rem;
+}
+
+.fortune-container p {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.fortune-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.fortune-card {
+  height: 150px;
+  background: #2a75bb;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fortune-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-back {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffcb05;
+}
+
+.fortune-result {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fortune-pokemon-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.fortune-result h2 {
+  color: #2a75bb;
+  margin-bottom: 1rem;
+}
+
+.fortune-message {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.fortune-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.fortune-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #2a75bb;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.fortune-button:hover {
+  background-color: #1a5a9c;
+}
+
+.fortune-button.secondary {
+  background-color: #ffcb05;
+  color: #2a75bb;
+}
+
+.fortune-button.secondary:hover {
+  background-color: #e6b800;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: #2a75bb;
+}

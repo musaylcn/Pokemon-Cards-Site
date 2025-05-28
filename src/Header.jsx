@@ -10,6 +10,7 @@ export function Header() {
           <li><Link to="/">Ana Sayfa</Link></li>
           <li><Link to="/favorites">Favoriler</Link></li>
           <li><Link to="/quizz">Quiz</Link></li>
+          <li><Link to="/fortune">Fortune</Link></li>
         </ul>
       </nav>
     </header>
