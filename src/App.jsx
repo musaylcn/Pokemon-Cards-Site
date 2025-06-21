@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Pokemon } from "./Pokemon";
-import { PokemonDetail } from "./PokemonDetail";
-import { Header } from "./Header";
-import { FavoritesProvider } from "./FavoritesContext"; 
-import { Quizz } from "./Quizz";
-import { FavoritesPage } from "./FavoritesPage";
-import { FortuneCard } from "./FortuneCards"; // Yeni eklenen component
+import { Pokemon } from "./pages/PokemonCardsPage/Pokemon";
+import { PokemonDetail } from "./pages/PokemonDetailPage/PokemonDetail";
+import { Header } from "./components/navbar/Header";
+import { FavoritesProvider } from "./pages/FavoritesPage/FavoritesContext"; 
+import { Quizz } from "./pages/QuizzPage/Quizz";
+import { FavoritesPage } from "./pages/FavoritesPage/FavoritesPage";
+import { FortuneCard } from "./pages/FortuneCardsPage/FortuneCards"; 
 
 export function App() {
   return (

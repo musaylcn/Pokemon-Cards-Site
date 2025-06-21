@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "./FortuneCards.css"; 
+import "../FortuneCardsPage/FortuneCards.css"; 
 
 export const FortuneCard = () => {
   const [pokemons, setPokemons] = useState([]);

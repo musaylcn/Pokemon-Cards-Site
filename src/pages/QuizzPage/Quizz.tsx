@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import "./Quizz.css";
+import "../QuizzPage/Quizz.css"; 
 
 type Question = {
   question: string;

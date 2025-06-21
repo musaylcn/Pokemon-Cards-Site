@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
-import { FavoritesContext } from "./FavoritesContext";
+import { FavoritesContext } from "../FavoritesPage/FavoritesContext";
 
 export const PokemonDetail = () => {
   const { id } = useParams();
