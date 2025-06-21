@@ -1,12 +1,18 @@
 import { useState } from "react";
-import { useForm } from "react-hook-form";
-import "../QuizzPage/Quizz.css"; 
+import { useForm, UseFormReturn } from "react-hook-form";
+import "../QuizzPage/Quizz.css";
 
-type Question = {
+interface Question {
   question: string;
   options: string[];
   answer: string;
+}
+
+
+type FormValues = {
+  [key: string]: string; 
 };
+
 
 const questions: Question[] = [
   {
@@ -62,23 +68,22 @@ const questions: Question[] = [
 ];
 
 export const Quizz = () => {
-  const { handleSubmit, setValue, reset, getValues } = useForm();
-  const [score, setScore] = useState(0);
-  const [isQuizFinished, setIsQuizFinished] = useState(false);
+  const { handleSubmit, setValue, reset, getValues }: UseFormReturn<FormValues> = useForm<FormValues>();
+  const [score, setScore] = useState<number>(0);
+  const [isQuizFinished, setIsQuizFinished] = useState<boolean>(false);
   const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]);
 
-  const handleAnswerClick = (index: number, answer: string) => {
-    setSelectedAnswers((prev) => {
-      const updatedAnswers = [...prev];
-      updatedAnswers[index] = answer;
-      return updatedAnswers;
-    });
 
-    setValue(`question${index}`, answer); // ✅ Form datasına yaz
+  const handleAnswerClick = (index: number, answer: string) => {
+    const updatedAnswers = [...selectedAnswers];
+    updatedAnswers[index] = answer;
+    setSelectedAnswers(updatedAnswers);
+    setValue(`question${index}`, answer);
   };
 
+
   const onSubmit = () => {
-    const formData = getValues(); // ✅ Formdaki cevapları al
+    const formData = getValues();
     let totalScore = 0;
 
     questions.forEach((question, index) => {
@@ -90,6 +95,7 @@ export const Quizz = () => {
     setScore(totalScore);
     setIsQuizFinished(true);
   };
+
 
   const restartQuiz = () => {
     setScore(0);

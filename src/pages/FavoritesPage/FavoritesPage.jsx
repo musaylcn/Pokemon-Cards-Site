@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { FavoritesContext } from "../FavoritesPage/FavoritesContext";
+import "./FavoritesPage.css"; 
 
 export const FavoritesPage = () => {
   const { favorites, removeFromFavorites } = useContext(FavoritesContext);
@@ -14,26 +15,17 @@ export const FavoritesPage = () => {
   };
 
   return (
-    <div>
+    <div className="favorites-container">
       <h1>Favori Pokémonlar</h1>
       {favorites.length === 0 ? (
         <p>Hiç favori yok.</p>
       ) : (
-        <ul style={{ listStyle: "none", padding: 0 }}>
+        <ul className="favorites-list">
           {favorites.map((pokemon) => (
-            <li key={pokemon.id} style={{ marginBottom: 20, border: "1px solid #ccc", padding: 10, position: "relative" }}>
+            <li key={pokemon.id} className="pokemon-card">
               <button
+                className="remove-button"
                 onClick={() => handleRemove(pokemon)}
-                style={{
-                  position: "absolute",
-                  top: 10,
-                  right: 10,
-                  background: "none",
-                  border: "none",
-                  color: "red",
-                  fontSize: "20px",
-                  cursor: "pointer",
-                }}
               >
                 ❌
               </button>

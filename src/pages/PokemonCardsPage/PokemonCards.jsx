@@ -1,11 +1,11 @@
-import { useNavigate } from "react-router-dom"; // useNavigate hook'unu import ediyoruz
+import { useNavigate } from "react-router-dom"; 
 
 export const PokemonCards = ({ pokemonData }) => {
   const navigate = useNavigate();
 
-  // "Daha Fazla..." butonuna tıklandığında URL'yi değiştirecek fonksiyon
+
   const handleMoreInfo = () => {
-    navigate(`/${pokemonData.id}`); // Pokemon'un ID'sini URL'ye ekliyoruz
+    navigate(`/${pokemonData.id}`); 
   };
 
   return (
@@ -22,7 +22,7 @@ export const PokemonCards = ({ pokemonData }) => {
         <p>{pokemonData.types.map((curType) => curType.type.name).join(", ")}</p>
       </div>
       <button className="more-info" onClick={handleMoreInfo}>
-        <p>Daha Fazla...</p>
+        <p style={{ fontSize: "1.6rem", color: "white" }}>Daha Fazla...</p>
       </button>
     </li>
   );

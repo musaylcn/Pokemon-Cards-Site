@@ -4,12 +4,12 @@
   padding: 20px;
   font-family: Arial, sans-serif;
   text-align: center;
-  background-image: url('https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png'); /* Pokémon fotoğrafı */
+  background-image: url('poke.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .question-container {
@@ -48,13 +48,13 @@ h2 {
 }
 
 .option-button:hover {
-  background-color: #4CAF50;
+  background-color: #2e3c8d;
   color: white;
   transform: scale(1.05);
 }
 
 .option-button.selected {
-  background-color: #28a745;
+  background-color: #2e3c8d;
   color: white;
 }
 

@@ -15,9 +15,9 @@ export function App() {
         <Routes>
           <Route path="/" element={<Pokemon />} />
           <Route path="/:id" element={<PokemonDetail />} />
-          <Route path="/favorites" element={<FavoritesPage />} />
-          <Route path="/quizz" element={<Quizz />} />
-          <Route path="/fortune" element={<FortuneCard />} /> {/* Yeni eklenen route */}
+          <Route path="/favoriler" element={<FavoritesPage />} />
+          <Route path="/quiz" element={<Quizz />} />
+          <Route path="/fal" element={<FortuneCard />} /> 
         </Routes>
       </Router>
     </FavoritesProvider>

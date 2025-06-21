@@ -1,4 +1,4 @@
-/* Base Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +7,12 @@
 }
 
 html {
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 62.5%; 
 }
 
 body {
   background-color: #ff95e8;
-  color: #f9f9f9;
+  color: #000000;
   line-height: 1.6;
 }
 
@@ -24,12 +24,12 @@ h1 {
   font-size: 4.8rem;
   text-align: center;
   margin-bottom: 2rem;
-  color: #f9f9f9;
+  color: #000000;
 }
 
 p, span {
-  font-size: 1.6rem;
-  color: #cccccc;
+  font-size: 2rem;
+  color: #000000;
 }
 
 span {
@@ -53,10 +53,8 @@ ul {
 
 .poke-title {
   border-radius: 50px;
-  background-color: black;
   padding: 20px 40px;
-  color: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  color: black;
   margin: 30px;
 }
 
@@ -73,17 +71,17 @@ input[type="text"] {
   padding: 1rem;
   font-size: 1.6rem;
   border: none;
-  border-bottom: 0.2rem solid #4e54c8;
+  border-bottom: 0.2rem solid #000000;
   border-radius: 1rem 1rem 0 0;
   background-color: rgba(255, 255, 255, 0.1);
-  color: #f0f0f0;
-  background-color: black;
+  color: #000000;
+  background-color: rgb(211, 211, 211);
 }
 
-/* ====== KARTLAR ====== */
+
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 💻 4 kart */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 2rem;
   padding: 2rem 0;
   justify-items: center;
@@ -132,7 +130,7 @@ input[type="text"] {
   border-radius: 50% 50% 100% 0% / 99% 100% 0% 1%;
 }
 
-/* ====== Kart İçeriği ====== */
+
 figure {
   display: flex;
   justify-content: center;
@@ -190,16 +188,16 @@ figure {
   cursor: pointer;
 }
 
-/* ====== RESPONSIVE ====== */
+
 @media (max-width: 1024px) {
   .cards {
-    grid-template-columns: repeat(2, 1fr); /* Tablet: 2 kart */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 600px) {
   html {
-    font-size: 56.25%; /* 1rem = 9px */
+    font-size: 56.25%; 
   }
 
   h1 {
@@ -207,7 +205,7 @@ figure {
   }
 
   .cards {
-    grid-template-columns: 1fr; /* Telefon: 1 kart */
+    grid-template-columns: 1fr;
   }
 
   .pokemon-image {
@@ -217,7 +215,7 @@ figure {
 
 @media (max-width: 400px) {
   html {
-    font-size: 50%; /* 1rem = 8px */
+    font-size: 50%; 
   }
 
   h1 {

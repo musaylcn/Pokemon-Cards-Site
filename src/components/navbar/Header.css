@@ -23,14 +23,14 @@ nav li {
 }
 
 nav a {
-  color: #61dafb;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: white;
-  border-bottom: 2px solid #61dafb;
+  color: rgb(255, 79, 217);
+  border-bottom: 2px solid #ff4eff;
 }
 
 /* Responsive: Mobil cihazlar için menüyü dikey hale getir */

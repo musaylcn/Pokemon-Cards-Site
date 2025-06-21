@@ -1,12 +1,13 @@
 import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { FavoritesContext } from "../FavoritesPage/FavoritesContext";
+import "./PokemonDetail.css";
 
 export const PokemonDetail = () => {
   const { id } = useParams();
   const [pokemonDetail, setPokemonDetail] = useState(null);
   const { addToFavorites } = useContext(FavoritesContext);
-  const [showMessage, setShowMessage] = useState(false); // 👈 mesaj için state
+  const [showMessage, setShowMessage] = useState(false);
 
   useEffect(() => {
     const fetchPokemonDetail = async () => {
@@ -18,10 +19,10 @@ export const PokemonDetail = () => {
   }, [id]);
 
   const handleAddToFavorites = () => {
-  addToFavorites(pokemonDetail); // Tüm detayı ekliyoruz
-  setShowMessage(true);
-  setTimeout(() => setShowMessage(false), 2000);
-};
+    addToFavorites(pokemonDetail);
+    setShowMessage(true);
+    setTimeout(() => setShowMessage(false), 2000);
+  };
 
   if (!pokemonDetail) {
     return <h1>Loading...</h1>;
@@ -34,7 +35,7 @@ export const PokemonDetail = () => {
         <button className="add-to-favorites" onClick={handleAddToFavorites}>
           ❤️ Favorilere Ekle
         </button>
-        {showMessage && <p style={{ color: "green" }}>✅ Favorilere eklendi!</p>}
+        {showMessage && <p className="success-message">✅ Favorilere eklendi!</p>}
       </div>
 
       <img
